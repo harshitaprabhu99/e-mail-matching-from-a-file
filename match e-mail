@@ -1,0 +1,7 @@
+import re
+f=open('file.txt','r')
+r='((^From:)|(^To:))[\S][A-Za-z0-9]+@[A-Za-z0-9]+\.\S+'
+for line in f:
+  match=re.findall(r.line)
+  if match:
+    print(match)
